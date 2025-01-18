@@ -1,11 +1,12 @@
-# QQBot
+# NodeQQBot
 用NodeJS+GO-CQHttp实现的QQ机器人
-## 本项目依据Apache License 2.0开源
+**本项目依据Apache License 2.0开源**
 
 ## 项目依赖
 - GO-CQHTTP 》 [文档](https://docs.go-cqhttp.org/)
 
 ## 运行项目
+**注意**: GO-CQHTTP需要开启WEBSOCKET和HTTP服务
 ```bash
 npm run start
 ```
@@ -13,6 +14,24 @@ npm run start
 **注意**: 此模式使用了 **nodemon** 请自行手动安装  
 ```bash
 npm run dev
+```
+
+## 配置文件
+配置在config.json里  
+```json
+{
+  "admin": [], // 此处为管理员QQ号
+  "wsserver": { // websocket服务器地址
+    "host": "localhost", 
+    "port": 5710
+  },
+  "httpserver": { // http服务器地址
+    "protocol": "http", // 服务器协议
+    "host": "localhost",
+    "port": 5700
+  }
+}
+
 ```
 
 ## 开发建议
