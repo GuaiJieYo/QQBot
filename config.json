@@ -1,0 +1,12 @@
+{
+  "admin": [3272615494],
+  "wsserver": {
+    "host": "localhost",
+    "port": 5710
+  },
+  "httpserver": {
+    "protocol": "http",
+    "host": "localhost",
+    "port": 5700
+  }
+}
